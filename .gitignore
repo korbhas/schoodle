@@ -1,6 +1,8 @@
 # Dependencies
 node_modules/
 **/node_modules/
+/.pnp
+.pnp.js
 
 # Environment variables
 .env
@@ -15,7 +17,20 @@ node_modules/
 dist/
 build/
 out/
+dist-electron/
+
+# Testing
+/coverage
+coverage/
+.nyc_output/
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # IDE
 .vscode/
@@ -38,15 +53,10 @@ Thumbs.db
 *.temp
 .cache/
 
-# Coverage
-coverage/
-.nyc_output/
-
-# Electron
-dist-electron/
+# Misc
+.DS_Store
 
 # Package manager locks (optional - uncomment if you want to ignore)
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
-
